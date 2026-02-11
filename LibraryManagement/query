@@ -1,0 +1,13 @@
+Create table Author_Tbl(
+Author_code Number(5) Primary Key,
+Author_name Varchar(20) Not null,
+Author_no Number(10));
+Insert into Author_Tbl(Author_code,Author_name,Author_no)Values('Robinsharma',8800799224);
+Insert into Author_Tbl(Author_code,Author_name,Author_no)Values('R.K.Narayan',9971935000);
+Insert into Author_Tbl(Author_code,Author_name,Author_no)Values('Paulo Coelho',123456789);
+Create table Book_Tbl(
+ISBN Varchar(20) Primary Key,
+Book_title Varchar(20) Not null,
+Book_type Char(1),
+Author_code Number(5),
+Book_cost Number(8,2) Not null);
